@@ -67,45 +67,48 @@ OtherTab:AddButton({
     Callback = function()
        local player = loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
       end    
-   })
+})
 
 OtherTab:AddButton({
     Name = "Infinity Yield",
     Callback = function()
        local player = loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
       end    
-   })
+})
 
 OtherTab:AddButton({
     Name = "Fling Script",
     Callback = function()
        local player = loadstring(game:HttpGet("https://paste.ee/r/NTtmf", true))()
       end    
-   })
+})
 
-OtherTab:AddButton({
-    Name = "R4D",
-    Callback = function()
-       local player = https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
-      end    
-   })
-   
+--my tab
 
-local MyTab = Window:MakeTab({
-	Name = "For Me",
+local XeonTab = Window:MakeTab({
+	Name = "Xeon",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
    })
    
-local Section = MyTab:AddSection({
-	Name = "For Me"
+   local Section = XeonTab:AddSection({
+	Name = "Xeon"
    })
    
-   OtherTab:AddButton({
-    Name = "Other Hub",
-    Callback = function()
-       local player = loadstring(game:HttpGet(('https://raw.githubusercontent.com/cris123452/my/main/hub')))()
-      end    
+   
+   XeonTab:AddButton({
+	Name = "R4D",
+	Callback = function()
+	   local player = loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+	  end    
    })
+   
+   XeonTab:AddButton({
+	   Name = "Fhub",
+	   Callback = function()
+		  local player = loadstring(game:HttpGet(('https://raw.githubusercontent.com/cris123452/my/main/hub')))()
+		 end    
+   })
+
 
 OrionLib:Init()
