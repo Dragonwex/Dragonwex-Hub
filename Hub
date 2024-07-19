@@ -11,37 +11,6 @@ local PlayerTab = Window:MakeTab({
  PremiumOnly = false
 })
 
-local Section = PlayerTab:AddSection({
- Name = "Movement"
-})
-
-PlayerTab:AddSlider({
- Name = "Walkspeed",
- Min = 16,
- Max = 10000000000000000,
- Default = 16,
- Color = Color3.fromRGB(255,255,255),
- Increment = 1,
- ValueName = "WS",
- Callback = function(Value)
-  game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
- end    
-})
-
-PlayerTab:AddSlider({
- Name = "Jump Height",
- Min = 16,
- Max = 10000000000000000,
- Default = 5,
- Color = Color3.fromRGB(255,255,255),
- Increment = 1,
- ValueName = "Height",
- Callback = function(Value)
-  game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
- end    
-})
-
-
 --other tab
 
 local OtherTab = Window:MakeTab({
@@ -55,19 +24,6 @@ local Section = OtherTab:AddSection({
 })
 
 
-OtherTab:AddButton({
- Name = "Fly",
- Callback = function()
-    local player = loadstring(game:HttpGet("https://pastebin.com/raw/gaz0U0XX"))();
-   end    
-})
-
-OtherTab:AddButton({
-    Name = "Esp",
-    Callback = function()
-       local player = loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
-      end    
-})
 
 OtherTab:AddButton({
     Name = "Infinity Yield",
@@ -104,11 +60,29 @@ local XeonTab = Window:MakeTab({
    })
    
    XeonTab:AddButton({
-	   Name = "Fhub",
+	   Name = "For Brookhaven Again",
 	   Callback = function()
-		  local player = loadstring(game:HttpGet(('https://raw.githubusercontent.com/cris123452/my/main/hub')))()
+		  local player = loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
 		 end    
    })
 
+
+   local MyTab = Window:MakeTab({
+      Name = "WTH SYKA OBNOVA?!?!?!",
+      Icon = "rbxassetid://10590477450",
+      PremiumOnly = false
+      })
+      
+      local Section = MyTab:AddSection({
+      Name = "WTH SYKA OBNOVA?!?!?!"
+      })
+
+      MyTab:AddButton({
+         Name = "CHORNIY PISTOLET HEY!",
+         Callback = function()
+           local player = print("nothing xd")
+          end    
+      })
+   
 
 OrionLib:Init()
